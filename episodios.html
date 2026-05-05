@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Episódios</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">Episódios</h1>
+
+<div class="episodes-container">
+
+<div class="episode-card" onclick="openEpisode(1)">
+<div class="episode-thumb"><img src="img/ep1.jpg"></div>
+<p>Ep. 1</p>
+</div>
+
+<div class="episode-card" onclick="openEpisode(2)">
+<div class="episode-thumb"><img src="img/ep2.jpg"></div>
+<p>Ep. 2</p>
+</div>
+
+<div class="episode-card" onclick="openEpisode(3)">
+<div class="episode-thumb"><img src="img/ep3.jpg"></div>
+<p>Ep. 3</p>
+</div>
+
+<div class="episode-card" onclick="openEpisode(4)">
+<div class="episode-thumb"><img src="img/ep4.jpg"></div>
+<p>Ep. 4</p>
+</div>
+
+<div class="episode-card" onclick="openEpisode(5)">
+<div class="episode-thumb"><img src="img/ep5.jpg"></div>
+<p>Ep. 5</p>
+</div>
+
+<div class="episode-card" onclick="openEpisode(6)">
+<div class="episode-thumb"><img src="img/ep6.jpg"></div>
+<p>Ep. 6</p>
+</div>
+
+<div class="episode-card" onclick="openEpisode(7)">
+<div class="episode-thumb"><img src="img/ep7.jpg"></div>
+<p>Ep. 7</p>
+</div>
+
+<div class="episode-card" onclick="openEpisode(8)">
+<div class="episode-thumb"><img src="img/ep8.jpg"></div>
+<p>Ep. 8</p>
+</div>
+
+<div class="episode-card" onclick="openEpisode(9)">
+<div class="episode-thumb"><img src="img/ep9.jpg"></div>
+<p>Ep. 9</p>
+</div>
+</div>
+
+<div id="modal" class="modal">
+<span class="close" onclick="closeEpisode()">×</span>
+<div class="modal-content">
+<img id="modalImg">
+<div id="modalText" class="love-letter"></div>
+<button class="next-btn" onclick="nextEpisode()">▶ Próximo episódio</button>
+</div>
+</div>
+
+<audio id="player"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
