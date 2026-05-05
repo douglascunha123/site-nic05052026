@@ -1,24 +1,133 @@
-body{margin:0;background:#000;color:#fff;font-family:Arial;}
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+margin:0;
+background:#000;
+color:#fff;
+font-family:Arial, sans-serif;
+}
+
+/* HERO */
 .hero{height:100vh;position:relative;}
 .banner{width:100%;height:100%;object-fit:cover;}
-.overlay{position:absolute;bottom:20%;left:10%;}
-.play-btn{padding:15px 25px;font-size:18px;cursor:pointer;}
 
-.episodes-container{display:flex;gap:20px;padding:20px;overflow-x:auto;}
-.episode-card{width:220px;cursor:pointer;transition:.3s;}
-.episode-card:hover{transform:scale(1.08);}
-.episode-thumb{aspect-ratio:16/9;overflow:hidden;border-radius:10px;}
-.episode-thumb img{width:100%;height:100%;object-fit:cover;}
+.overlay{
+position:absolute;
+bottom:15%;
+left:50%;
+transform:translateX(-50%);
+text-align:center;
+}
 
-.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);justify-content:center;align-items:center;}
-.modal-content{width:80%;max-width:800px;text-align:center;}
-.modal img{width:100%;border-radius:10px;}
+.play-btn{
+padding:14px 22px;
+font-size:16px;
+border:none;
+border-radius:8px;
+background:#e50914;
+color:#fff;
+}
 
-.love-letter{margin-top:15px;font-size:18px;line-height:1.6;}
+/* EPISÓDIOS */
+.title{text-align:center;margin:20px 0;}
 
-.next-btn{margin-top:20px;padding:12px 20px;background:#e50914;color:#fff;border:none;border-radius:5px;cursor:pointer;}
+.episodes-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+padding:12px;
+}
 
-.close{position:absolute;top:20px;right:40px;font-size:30px;cursor:pointer;}
+.episode-card{
+cursor:pointer;
+transition:.2s;
+}
 
+.episode-card:active{
+transform:scale(0.97);
+}
+
+.episode-thumb{
+aspect-ratio:16/9;
+border-radius:8px;
+overflow:hidden;
+}
+
+.episode-thumb img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.episode-card p{
+text-align:center;
+font-size:14px;
+margin-top:6px;
+}
+
+/* MODAL */
+.modal{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.95);
+justify-content:center;
+align-items:center;
+padding:15px;
+}
+
+.modal-content{
+width:100%;
+max-width:500px;
+text-align:center;
+}
+
+.modal img{
+width:100%;
+border-radius:10px;
+}
+
+.love-letter{
+margin-top:15px;
+font-size:16px;
+line-height:1.5;
+padding:0 5px;
+}
+
+.next-btn{
+width:100%;
+margin-top:20px;
+padding:14px;
+background:#e50914;
+border:none;
+border-radius:8px;
+color:#fff;
+font-size:16px;
+}
+
+.close{
+position:absolute;
+top:15px;
+right:20px;
+font-size:28px;
+cursor:pointer;
+}
+
+/* ANIMAÇÃO */
 .fade-out{animation:fadeOut .6s forwards;}
 @keyframes fadeOut{to{opacity:0;}}
+
+/* DESKTOP */
+@media(min-width:768px){
+.episodes-container{
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:20px;
+}
+
+.play-btn{
+font-size:18px;
+}
+}

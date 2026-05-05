@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nic & Douglas</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -10,15 +11,15 @@
 <section class="hero">
 <img src="img/banner.jpg" class="banner">
 <div class="overlay">
-<button onclick="goToEpisodes()" class="play-btn">▶ Assistir agora</button>
+<button id="playBtn" class="play-btn">▶ Assistir agora</button>
 </div>
 </section>
 
 <script>
-function goToEpisodes(){
-document.body.classList.add("fade-out");
-setTimeout(()=>window.location.href="episodios.html",600);
-}
+document.getElementById("playBtn").addEventListener("click", () => {
+  document.body.classList.add("fade-out");
+  setTimeout(()=>window.location.href="episodios.html",600);
+});
 </script>
 
 </body>
