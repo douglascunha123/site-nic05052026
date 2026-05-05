@@ -11,33 +11,20 @@ const data = {
 6:{img:"img/ep6.jpg",audio:"audio/ep6.mp3",text:"Nosso amor no ritmo do rock."},
 7:{img:"img/ep7.jpg",audio:"audio/ep7.mp3",text:"Momentos que fortalecem tudo."},
 8:{img:"img/ep8.jpg",audio:"audio/ep8.mp3",text:"Hoje celebramos você ❤️"},
-9:{
-img:"img/ep9.jpg",
-audio:"audio/ep9.mp3",
-text:`Se a gente estivesse em Paris agora...
+9: {
+    img: "img/ep9.jpg",
+    audio: "audio/ep9.mp3",
+    text: `Se eu pudesse escolher mil vezes…
 
-Eu te levaria pra andar sem pressa pelas ruas iluminadas,
-segurando sua mão como se o tempo não existisse.
+eu ainda escolheria você.
 
-A gente passaria pela Torre Eiffel,
-mas nada brilharia mais do que o teu sorriso.
+Hoje, amanhã e em todos os capítulos
+que ainda vamos viver.
 
-Depois, eu te levaria pra Disneyland,
-e veria teu olhar cheio de magia —
-e eu me apaixonaria por você de novo.
+Porque o meu futuro…
 
-E no fim da noite,
-como em Ratatouille...
-eu lembraria:
-
-Não importa o lugar,
-é você que torna tudo especial.
-
-Eu escolho você.
-Sempre.
-
+tem o seu nome. ❤️`
 Parce que je t’aime. ❤️`
-}
 };
 
 function fadeInAudio(a){
